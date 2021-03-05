@@ -8,3 +8,19 @@ The dataset is aviliable though the following link: [SpaceNet_data](https://pan.
 ```
 python train.py --data_name SpaceNet --hash_bit 64 --gpus 0,1 --model_type resnet18 --lambda1 0  --lambda2 0.05  --R 50
 ```
+## Test for hash retrieval performence
+You should set
+```
+database_list = 'data/' + args.data_name + '/train.txt'
+
+```
+```
+python test.py --data_name SpaceNet --gpus 0,1  --R 50  --model_name 'name' 
+```
+## Test for Localization performence
+```
+database_list = 'data/' + args.data_name + '/database.txt'
+```
+```
+python test.py --data_name SpaceNet --gpus 0,1  --R 50  --model_name 'name' 
+```
