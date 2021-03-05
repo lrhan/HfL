@@ -12,7 +12,6 @@ python train.py --data_name SpaceNet --hash_bit 64 --gpus 0,1 --model_type resne
 You should set
 ```
 database_list = 'data/' + args.data_name + '/train.txt'
-
 ```
 ```
 python test.py --data_name SpaceNet --gpus 0,1  --R 50  --model_name 'name' 
